@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formation rank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/output.css" />
+  </head>
+  <body>
+    <nav
+      class="relative flex w-full flex-wrap items-center justify-around py-2 shadow-dark-mild dark:bg-neutral-700 lg:py-4"
+    >
+      <div class="flex  items-center">
+        <img
+          src="https://img.freepik.com/vector-premium/plantilla-logotipo-futbol-soccer-icono-ilustracion-identidad-marca-ilustracion-aislada-plana-grafico-vectorial_7109-1683.jpg"
+          width="50px"
+          alt=""
+          srcset=""
+          class="mr-4"
+        />
+
+        <h1 class="text-white font-thin  text-4xl">FORMATIONRANK</h1>
+      </div>
+    </nav>
+    <form
+      class="w-full max-w-2xl mx-auto px-6 py-4 flex-col bg-gray-100 border-t hidden"
+      id="formPlayer3"
+    >
+      <div id="playerInformations3"></div>
+      <div class="ms-5 flex w-[90%] items-center justify-between mb-5">
+        <input
+          type="search"
+          class="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="button-addon2"
+          id="search3"
+        />
+
+        <!--Search icon-->
+        <span
+          class="flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-gray-600 dark:text-white [&>svg]:w-5"
+          id="basic-addon2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="flex flex-col items-start mb-4">
+        <div class="flex justify-between w-full">
+          <div>
+            <input type="text" id="PlayerName3" />
+            <label for="Position" class="block text-gray-700 mb-2"
+              >Position</label
+            >
+            <input type="text" id="Position3" />
+            <input type="text" id="Rate3" />
+          </div>
+          <button
+            id="closeMenu3"
+            type="button"
+            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 h-7"
+          >
+            <span class="sr-only">Close menu</span>
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <input
+          type="text"
+          placeholder="the srcImage of the player"
+          id="imgPlayerSrc3"
+          class="appearance-none bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+        />
+        <input
+          type="text"
+          placeholder="nationalite of the player"
+          id="nationalite3"
+          class="appearance-none bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+        />
+        <input type="hidden" id="nationaliteFlag3" />
+        <input type="hidden" id="leagueName3" />
+        <input type="hidden" id="ClubLogo3" />
+        <input type="hidden" id="PAC3" />
+        <input type="hidden" id="SHO3" />
+        <input type="hidden" id="PAS3" />
+        <input type="hidden" id="DRI3" />
+        <input type="hidden" id="DEF3" />
+        <input type="hidden" id="PHY3" />
+        <input type="hidden" id="DIV3" />
+        <input type="hidden" id="KIC3" />
+        <input type="hidden" id="HAN3" />
+        <input type="hidden" id="POS3" />
+        <input type="hidden" id="REF3" />
+        <input type="hidden" id="SPE3" />
+        <input
+          type="text"
+          placeholder="club of this player"
+          id="club3"
+          class="appearance-none bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+        />
+      </div>
+      <button
+        type="submit"
+        class="w-full bg-black hover:bg-teal-700 text-white py-2 px-4 rounded"
+      >
+        Add The PLayer
+      </button>
+    </form>
+    <form
+      class="w-full max-w-2xl mx-auto px-6 py-4 flex-col bg-gray-100 border-t hidden"
+      id="formPlayer"
+    >
+      <div id="playerInformations"></div>
+      <div class="ms-5 flex w-[90%] items-center justify-between mb-5">
+        <input
+          type="search"
+          class="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="button-addon2"
+          id="search"
+        />
+
+        <!--Search icon-->
+        <span
+          class="flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-gray-600 dark:text-white [&>svg]:w-5"
+          id="basic-addon2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="flex flex-col items-start mb-4">
+        <div class="flex justify-between w-full">
+          <div>
+            <input type="text" id="PlayerName" />
+            <label for="Position" class="block text-gray-700 mb-2"
+              >Position</label
+            >
+            <input type="text" id="Position" />
+            <input type="text" id="Rate" />
+          </div>
+          <button
+            id="closeMenu"
+            type="button"
+            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 h-7"
+          >
+            <span class="sr-only">Close menu</span>
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <input
+          type="text"
+          placeholder="the srcImage of the player"
+          id="imgPlayerSrc"
+          class="appearance-none bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+        />
+        <input
+          type="text"
+          placeholder="nationalite of the player"
+          id="nationalite"
+          class="appearance-none bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+        />
+        <input type="hidden" id="nationaliteFlag" />
+        <input type="hidden" id="leagueName" />
+        <input type="hidden" id="ClubLogo" />
+        <input type="hidden" id="PAC" />
+        <input type="hidden" id="SHO" />
+        <input type="hidden" id="PAS" />
+        <input type="hidden" id="DRI" />
+        <input type="hidden" id="DEF" />
+        <input type="hidden" id="PHY" />
+        <input type="hidden" id="DIV" />
+        <input type="hidden" id="KIC" />
+        <input type="hidden" id="HAN" />
+        <input type="hidden" id="POS" />
+        <input type="hidden" id="REF" />
+        <input type="hidden" id="SPE" />
+        <input
+          type="text"
+          placeholder="club of this player"
+          id="club"
+          class="appearance-none bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+        />
+      </div>
+      <button
+        type="submit"
+        class="w-full bg-black hover:bg-teal-700 text-white py-2 px-4 rounded"
+      >
+        Add The PLayer
+      </button>
+    </form>
+    <form
+      class="w-full max-w-2xl mx-auto px-6 py-4 flex-col bg-gray-100 border-t hidden fixed top-7"
+      id="formPlayer2"
+    >
+      <div id="playerInformations2"></div>
+      <div class="ms-5 flex w-[90%] items-center justify-between mb-5">
+        <input
+          type="search"
+          class="relative m-0 block w-[1px] min-w-0 flex-auto rounded border border-solid border-secondary-500 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="button-addon2"
+          id="search2"
+        />
+        <span
+          class="flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-gray-600 dark:text-white [&>svg]:w-5"
+          id="basic-addon2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </span>
+      </div>
+      <div class="flex flex-col items-start mb-4">
+        <div class="flex justify-between w-full">
+          <div>
+            <input type="text" id="PlayerName2" />
+            <label for="Position" class="block text-gray-700 mb-2"
+              >Position</label
+            >
+            <input type="text" id="Position2" />
+            <input type="text" id="Rate2" />
+            <input type="hidden" id="nationaliteFlag2" />
+            <input type="hidden" id="leagueName2" />
+            <input type="hidden" id="ClubLogo2" />
+            <input type="hidden" id="PAC2" />
+            <input type="hidden" id="SHO2" />
+            <input type="hidden" id="PAS2" />
+            <input type="hidden" id="DRI2" />
+            <input type="hidden" id="DEF2" />
+            <input type="hidden" id="PHY2" />
+            <input type="hidden" id="DIV2" />
+            <input type="hidden" id="KIC2" />
+            <input type="hidden" id="HAN2" />
+            <input type="hidden" id="POS2" />
+            <input type="hidden" id="REF2" />
+            <input type="hidden" id="SPE2" />
+          </div>
+          <button
+            id="closeMenu2"
+            type="button"
+            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 h-7"
+          >
+            <span class="sr-only">Close menu</span>
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <input
+          type="text"
+          placeholder="the srcImage of the player"
+          id="imgPlayerSrc2"
+          class="appearance-none bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+        />
+        <input
+          type="text"
+          placeholder="nationalite of the player"
+          id="nationalite2"
+          class="appearance-none bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+        />
+        <input
+          type="text"
+          placeholder="club of this player"
+          id="club2"
+          class="appearance-none bg-gray-200 text-gray-700 border rounded py-2 px-4 mb-2 leading-tight focus:outline-none focus:bg-white"
+        />
+      </div>
+      <button
+        id="formPlayer2button"
+        class="w-full bg-black hover:bg-teal-700 text-white py-2 px-4 rounded"
+      >
+        player
+      </button>
+    </form>
+    <section class="flex">
+      <section class="flex flex-col">
+        <section
+          id="Form"
+          class="flex justify-between items-center p-5 mb-16 bg-gray-100 border border-gray-300 rounded-lg gap-4"
+        >
+          <!-- Form -->
+          <form id="form" class="flex w-2/5 justify-between gap-4">
+            <select
+              name="formation"
+              id="formation"
+              class="block w-2/6/4 px-4 py-3 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            >
+              <option value="442">4 - 4 - 2</option>
+              <option value="433">4 - 3 - 3</option>
+              <option value="343">3 - 4 - 3</option>
+              <option value="523">5 - 2 - 3</option>
+            </select>
+            <input
+              type="submit"
+              name="done"
+              value="Done"
+              class="w-2/5 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+            />
+          </form>
+
+          <!-- Chemistry -->
+          <div>
+            <p>YOUR SCORE :</p>
+            <div id="chemestry" class="flex-1 text-center">
+            
+            </div>
+          </div>
+
+          <div
+            id="addPlayerButton"
+            class="add-player-button px-4 py-2 bg-green-500 text-white rounded-lg cursor-pointer hover:bg-green-600"
+          >
+            <p>Add Player</p>
+          </div>
+
+          <div
+            id="fillAuto"
+            class="add-player-button px-4 py-2 bg-purple-500 text-white rounded-lg cursor-pointer hover:bg-purple-600"
+          >
+            <p>Fill Auto</p>
+          </div>
+        </section>
+
+        <section id="terrain" class="grid grid-rows-4">
+          <div>1st</div>
+          <div>2nd</div>
+          <div>3rd</div>
+          <div>4th</div>
+        </section>
+        <div class="flex justify-center text-black text-lg">
+          <h3 class="text-white">Remplacement</h3>
+        </div>
+        <section id="remplace" class="flex w-full flex-wrap bg-gray-600">
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+        </section>
+      </section>
+    </section>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

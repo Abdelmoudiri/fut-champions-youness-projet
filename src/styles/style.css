@@ -1,0 +1,366 @@
+#terrain {
+    background-image: url("https://raw.githubusercontent.com/aymanebenhima/FUT-Champ-Ultimate-Team-Assets/refs/heads/main/src/assets/img/stadium_background.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 70%;
+    height: 80%;
+    margin: 0 auto; 
+    position: relative; 
+  
+  }
+  body{
+    background-color :#164110;
+  }
+  #terrain div div,
+  #remplace div {
+    background-image: url("https://cdn3.futbin.com/content/fifa25/img/cards/hd/161_prime_hero.png?fm=png&ixlib=java-2.1.0&verzion=4&w=644&s=b92abed58187f4df4893c23cfa1857aa");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 150px;
+    border-radius: 10px;
+    margin: 10px auto; 
+    box-shadow: 0 4px 6px rgba(79, 11, 70, 0.1); 
+    position: relative;
+  }
+  #formPlayer,#formPlayer2,#formPlayer3{
+    position: relative;
+    top: 30;
+    z-index: 10;
+}
+.add-player-button {
+    background-color: #F0C987; 
+    color: #fff;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 16px; 
+    font-weight: 600;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .add-player-button:hover {
+    background-color: #4a5568;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    }
+  
+  .add-player-button:active {
+    background-color: #1a202c; 
+    transform: translateY(0); 
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+  }
+
+#formContainer {
+    display: none; 
+    position: fixed;
+    inset: 0; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  #formPlayer2,#formPlayer#formPlayer3{
+    max-width: 600px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: relative; /* For close button positioning */
+    padding: 24px;
+  }
+  
+  #closeMenu2,#closeMenu{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: #f5f5f5;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  #closeMenu2:hover ,#closeMenu:hover{
+    background-color: #e5e5e5;
+  }
+  
+  #closeMenu2 svg , #closeMenu svg{
+    height: 20px;
+    width: 20px;
+  }
+  
+
+  input {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  input:focus {
+    border-color: #38b2ac;
+    outline: none;
+    box-shadow: 0 0 4px rgba(56, 178, 172, 0.5);
+  }
+  
+  button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #formPlayer2button:hover , #formPlayerbutton:hover ,#formPlayer3button:hover  {
+    background-color: #319795;
+  }
+  
+  #formContainer.show {
+    display: flex;
+  }
+    #formPlayer , #formPlayer2, #formPlayer3{
+        position: absolute;
+        top: 300px;
+        left: 500px;
+    }
+
+    #search,#search2{
+
+    }
+    .sectionRemplace{
+      position: relative;
+      top: 20px;
+      left: 20px;
+
+
+    }
+    #terrain div{
+      position: relative;
+      bottom: 16px;
+    }
+    .spanRomplacent{
+      margin-top: 23px;
+      margin-left:12px ;
+    }
+    .flags,.logos{
+      width: 24px;
+
+    }
+    .imageCard{
+      width: 56%;
+      margin-left: 4px;
+      margin-top: 32px;
+
+        }
+        .playerName{ 
+          MARGIN-TOP: 17px;
+          font-size: smaller;
+
+        }
+        .playerPostion{
+          font-size: smaller;
+
+        }
+        .spanStats{
+          margin-left: 32px;
+
+      
+        }
+        .firstStats{
+          width: 50%;
+        }
+  @media screen and (max-width: 1024px) {
+    #terrain {
+      width: 90%; 
+      height: 70%;
+    }
+    
+  }
+  
+  @media screen and (max-width: 768px) {
+    #formPlayer , #formPlayer2,#formPlayer3{
+      position: absolute;
+      top: 190px;
+      left: 10px;
+  }
+
+    #terrain {
+      width: 100%;
+      position: relative;
+      left: 20px;
+    }
+    #formation{
+      width: fit-content;
+    }
+    #terrain div{
+      position: relative;
+      bottom: -1px;
+      right: 2px;
+    }
+    .RateText{
+      font-size: 9px;
+    }
+    .imageCard{
+      width: 66%;
+      margin-left: 1px;
+      margin-top: 25px;
+    }
+    .playerPostion{
+        font-size: 6px;
+    }
+    .sectionRemplace{
+      height: 44px;
+      position: relative;
+      top: 0;
+      left: 6px;
+
+    }
+    .spanRomplacent{
+        width: 10px;
+        height: 40px;
+        left: 0px;
+    }
+    .flags{
+        width: 6px ;
+    }
+    .spanStats{
+      margin-left: 12px;
+    }
+    .firstStats{
+        margin-left: 4px;
+        width: 20px;
+    }
+    .firstStats p {
+        font-size: 4px;
+    }
+    .playerName{
+        font-size: 5px;
+        MARGIN-TOP: 16px;
+
+    }
+    
+    .spanRomplacent{
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+    .flags,.logos{
+      width: 24px;
+
+    }
+    .imageCard{
+      width: 56%;
+      margin-left: 4px;
+      margin-top: 32px;
+
+        }
+       
+        .playerPostion{
+          font-size: 5px;
+
+        }
+        .spanStats{
+      
+      
+        }
+        .firstStats{
+          width: 50%;
+        }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #terrain {
+        width: 100%;
+        gap: 0;
+        left: 51px;
+
+      }
+      #terrain div{
+        height: 88px;
+        position: relative;
+        right: 27px;
+      }
+      .RateText{
+        font-size: 10px;
+      }
+      .imageCard{
+        height: 36px;
+        position: relative;
+        top: 6px;
+        right: 3px;
+        margin-top: 0px;
+
+      }
+      .playerPostion{
+        font-size: 4px;
+      }
+      .sectionRemplace{
+        margin-top: 12px;
+        margin-left: 2px;
+      }
+      .spanRomplacent{
+        width: 19px;
+        height: 40px;
+        left: 0px;
+        margin-left: 0px;
+        margin-top: 4px;
+      }
+      .flags{
+          width: 8px ;
+          margin-left: 4px;
+      }
+      .logos{
+        width: 9px;
+        margin-left: 4px;
+    }
+      .spanStats{
+        margin-left: 15px;
+      }
+      .firstStats{
+          margin-left: 0px;
+          width: 20px;
+      }
+      .firstStats p {
+        font-size: 3px;
+      }
+      .playerName{
+        font-size: 3px;
+        MARGIN-TOP: 0px;
+
+      }
+  }
+  
+  
+  
+
+  @media screen and (max-width: 768px) {
+    #terrain div div,
+    #remplace div {
+      height: 100px; 
+      width: 70px;
+    }
+    #remplace{
+      border-radius: 5%;
+      width: 70%;
+      position: relative;
+      left: 15%;
+    }
+  }
+  
+
+  @media screen and (max-width: 480px) {
+    #terrain div div,
+    #remplace div {
+        height: 85px;
+        width: 59px;
+    }
+  }
+  
+
